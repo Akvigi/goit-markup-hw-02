@@ -1,5 +1,10 @@
+:root {
+  --black-color: #212121;
+  --gray-color: #757575;
+}
+
 body {
-  font-family: 'roboto' 'sans-serif';
+  font-family: 'Roboto', sans-serif;
   background-color: #e5e5e5;
 }
 .list {
@@ -50,6 +55,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
+  font-weight: 500;
 }
 
 .linknav:active,
@@ -90,17 +96,21 @@ h1.a {
 }
 
 .zakazuslugi {
-  font-family: 'roboto' 'sans-serif';
+  font-family: 'Roboto ', sans-serif;
   font-style: Bold;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 6%;
   margin: 0 732px 0 732px;
-  background-color: #2196f3;
-  color: #ffffff;
   width: 200px;
   height: 50px;
   text-align: center;
+  color: #000;
+  background-color: #ffffff;
+}
+.zakazuslugi:hover {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 /* секции */
 
@@ -126,14 +136,14 @@ h2.b1 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin: 0 612px 0 612px;
+  text-align: center;
 }
 
 h2.b2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin: 0 668px 50px 668px;
+  text-align: center;
   padding-top: 94px;
 }
 
@@ -143,6 +153,7 @@ h3.c {
   font-size: 14px;
   line-height: 1.14;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 p.d {
@@ -227,7 +238,7 @@ p.g {
   line-height: 1.17;
   text-decoration: none;
   margin: 0 20px 0 215px;
-  font-family: 'raleway' 'sans-serif';
+  font-family: 'raleway', sans-serif;
   font-weight: 700;
 }
 
@@ -237,8 +248,16 @@ p.g {
   padding: 9px 0;
 }
 
+.linkfooter:hover {
+  color: #2196f3;
+}
+
 .footer_li {
   margin: 9px 0;
+}
+
+.portfolio_body {
+  background-color: #ffffff;
 }
 
 .list_portfolio_button {
@@ -249,66 +268,33 @@ p.g {
   list-style: none;
 }
 
-.button_portfolio1 {
-  font-family: 'roboto' 'sans-serif';
+.button_portfolio {
+  font-family: '
+      Roboto ' , sans-serif';
   font-style: Medium;
   font-size: 16px;
   line-height: (26/16) px;
   text-align: Center;
-  height: 38px;
-  width: 73px;
+  padding: 6px 22px;
+  font-weight: 500;
 }
 
-.button_portfolio2 {
-  font-family: 'roboto' 'sans-serif';
-  font-style: Medium;
-  font-size: 16px;
-  line-height: (26/16) px;
-  text-align: Center;
-  height: 38px;
-  width: 128px;
-}
-
-.button_portfolio3 {
-  font-family: 'roboto' 'sans-serif';
-  font-style: Medium;
-  font-size: 16px;
-  line-height: (26/16) px;
-  text-align: Center;
-  height: 38px;
-  width: 145px;
-}
-
-.button_portfolio4 {
-  font-family: 'roboto' 'sans-serif';
-  font-style: Medium;
-  font-size: 16px;
-  line-height: (26/16) px;
-  text-align: Center;
-  height: 38px;
-  width: 103px;
-}
-
-.button_portfolio5 {
-  font-family: 'roboto' 'sans-serif';
-  font-style: Medium;
-  font-size: 16px;
-  line-height: (26/16) px;
-  text-align: Center;
-  height: 38px;
-  width: 130px;
-}
-
-.button_portfolio5:focus,
-.button_portfolio4:focus,
-.button_portfolio3:focus,
-.button_portfolio2:focus,
-.button_portfolio5:hover,
-.button_portfolio4:hover,
-.button_portfolio3:hover,
-.button_portfolio2:hover,
-.button_portfolio1:hover,
-.button_portfolio1:focus {
+.button_portfolio:hover,
+.button_portfolio:focus {
   color: #ffffff;
   background-color: #2196f3;
+}
+
+h3.portfolio {
+  color: var(--black-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(36/18);
+}
+p.portfolio {
+  color: var(--gray-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30/18);
+  letter-spacing: 0.03em;
 }
