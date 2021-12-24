@@ -105,11 +105,12 @@ h1.a {
   width: 200px;
   height: 50px;
   text-align: center;
-  color: #000;
-  background-color: #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #2196f3;
 }
 .zakazuslugi:hover {
-  background-color: #2196f3;
+  background-color: #188ce8;
   color: #ffffff;
 }
 /* секции */
@@ -269,9 +270,8 @@ p.g {
 }
 
 .button_portfolio {
-  font-family: '
-      Roboto ' , sans-serif';
-  font-style: Medium;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: (26/16) px;
   text-align: Center;
@@ -289,12 +289,12 @@ h3.portfolio {
   color: var(--black-color);
   font-size: 18px;
   font-weight: 700;
-  line-height: calc(36/18);
+  line-height: calc(36 / 18);
 }
 p.portfolio {
   color: var(--gray-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(30/18);
+  line-height: calc(30 / 18);
   letter-spacing: 0.03em;
 }
