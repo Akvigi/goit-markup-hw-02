@@ -10,6 +10,7 @@ body {
 .list {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
 .link {
@@ -45,9 +46,15 @@ body {
 .listnav {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
 .li_nav {
+  margin: 32px 50px 32px 0;
+}
+
+.li_nav:last-child {
+  margin-right: 0;
 }
 
 .linknav {
@@ -62,6 +69,21 @@ body {
 .linknav:focus,
 .linknav:hover {
   color: #2196f3;
+}
+
+.list_addres_header {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.li_adress_header {
+  padding: 32px 0;
+}
+
+.li_adress_header:first-child {
+  padding-left: 331px;
+  margin-right: 50px;
 }
 
 .linkadress {
@@ -115,17 +137,34 @@ h1.a {
 }
 /* секции */
 
+.section_about {
+  width: 1600px;
+}
+
 .listplusy {
   margin: 94px 215px 94px 215px;
-  padding-right: 215px;
+  padding-left: 0;
+  padding-right: 0;
   list-style: none;
   display: flex;
+}
+
+.liplusy:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.list_whatwedo:first-child {
+  margin-left: 0px;
+  padding-left: 0;
 }
 
 .list_whatwedo {
   margin: 50px 215px 94px 215px;
   list-style: none;
   display: flex;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .li_image,
@@ -148,6 +187,19 @@ h2.b2 {
   padding-top: 94px;
 }
 
+.hiddenh2 {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 h3.c {
   font-weight: 700;
   color: #212121;
@@ -164,16 +216,22 @@ p.d {
   color: #757575;
 }
 
+.ulimg_whatwedo {
+  width: 1600px;
+}
+
 .sectionteam {
   background-color: #f5f4fa;
   width: 1600px;
 }
 
 .listteam {
-  margin: 0 215px 0 215px;
+  margin: 0 215px;
   padding-bottom: 94px;
   list-style: none;
   display: flex;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 li.e {
@@ -263,10 +321,20 @@ p.g {
 
 .list_portfolio_button {
   list-style: none;
+  display: flex;
+  margin: 94px 494px 34px 494px;
 }
 
 .listimgportfolio {
   list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  width: 1170px;
+  margin: 0px 215px 94px 215px;
+}
+
+.li_button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button_portfolio {
@@ -277,6 +345,7 @@ p.g {
   text-align: Center;
   padding: 6px 22px;
   font-weight: 500;
+  border: 0px;
 }
 
 .button_portfolio:hover,
@@ -290,6 +359,9 @@ h3.portfolio {
   font-size: 18px;
   font-weight: 700;
   line-height: calc(36 / 18);
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 p.portfolio {
   color: var(--gray-color);
@@ -297,4 +369,10 @@ p.portfolio {
   font-size: 16px;
   line-height: calc(30 / 18);
   letter-spacing: 0.03em;
+  margin-top: 4px;
+}
+
+.border_img_portfolio {
+  border: 1px;
+  color: #eeeeee;
 }
